@@ -26,7 +26,7 @@ export default function Home() {
             <p>
                Please fill out the form to play in the next available session!
             </p>
-
+            {/* Capture State of each input in the form */}
             <InputGroup flexDir="column" w="auto" color="white">
                <InputLeftAddon bg="rebeccapurple">Your Name</InputLeftAddon>
                <Input type="text" placeholder="Name" bgColor="gray.500" />
@@ -48,6 +48,7 @@ export default function Home() {
                   <option value="GK">GK</option>
                </Select>
             </InputGroup>
+            {/* On click, submit fields to db. In db count number of entries and fetch the first 22 players to sign up. 22 players get split into two teams based on their preferred roles. If preferred role is already taken then fill any other role until the team reaches 11 players. */}
             <Button bgColor="rebeccapurple" color="white">
                Submit
             </Button>
